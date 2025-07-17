@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Portforlio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+        <div class="logo">
+          <img src="images/logo.jpg" alt="Logo">
+          <span><a href="index.html">Obafemi Peace</a></span>
+        </div>      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <hr>
+
+        <!-- ABOUT ME SECTION -->
+<section class="about, bg" id="about">
+  <div class="container">
+    <h2 class="section-title"><span>About Me</span></h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          Hello! I’m <strong>Obafemi Peace</strong>, a passionate frontend developer based in Nigeria. I specialize in crafting beautiful, responsive, and user-friendly websites that bring ideas to life.
+        </p>
+        <p>
+          With a strong eye for design and a love for clean code, I build interfaces that not only look great but work perfectly across all devices. My development process combines creativity, modern technologies, and real-world functionality.
+        </p>
+        <p>
+          Beyond the frontend, I also integrate backend services like <strong>Firebase</strong> and <strong>Supabase</strong> to deliver seamless user authentication, database connections, and dynamic content — all with security and performance in mind.
+        </p>
+      <p>
+          When i'm not at the computer, i usually play <strong>Football</strong>, playing video games, or watching <strong><a  target="_blank" class="film-p" href="https://anicrush.to/">Films</a></strong> e.g(anime, and so on).
+      </p>
+    </section>
+    <section class="about-experience">
+    <div class="experience-education-container">
+    
+      <!-- Experience -->
+      <div class="experience-section">
+        <h3>Experience</h3>
+        <div class="experience-card">
+          <i class="fas fa-code"></i>
+          <div>
+            <h4>Frontend Developer Intern</h4>
+            <p>2024 - Present</p>
+            <p>Worked on building real client websites using HTML, CSS, JavaScript, and backend integration.</p>
+          </div>
+        </div>
+  
+        <div class="experience-card">
+          <i class="fas fa-laptop-code"></i>
+          <div>
+            <h4>Freelance Web Designer</h4>
+            <p>2024 - Present</p>
+            <p>Designed custom portfolio and business websites for clients in Nigeria and abroad.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Education -->
+      <div class="education-section">
+        <h3>Education</h3>
+        <ul class="timeline">
+          <li>
+            <h4>High School Diploma</h4>
+            <p>Chosen Generation, Ogun – 2024</p>
+          </li>
+          <li>
+            <h4>Web Development Certification</h4>
+            <p>Alison, 2022</p>
+          </li>
+          <li>
+            <h4>Ongoing Learning</h4>
+            <p>Building live projects and improving skills through online platforms.</p>
+          </li>
+        </ul>
+      </div>
+  
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Obafemi Peace. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://twitter.com/obafe81267" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/obafemi78654" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/+23409120347720" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:obafemifrank4@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      </div>    
+    </div>
+  </footer>
+  
+
+  <!-- Back to Top Button -->
+<button id="backToTop" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+
+<script>
+  // Show button when scroll is more than 200px
+  window.onscroll = function() {
+    const backToTop = document.getElementById("backToTop");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  };
+
+  // Scroll smoothly to top when button is clicked
+  document.getElementById("backToTop").onclick = function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
+
+</body>
+</html>

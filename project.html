@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Portforlio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+        <div class="logo">
+          <img src="images/logo.jpg" alt="Logo">
+          <span><a href="index.html">Obafemi Peace</a></span>
+        </div>           
+      <nav>
+        <ul class="nav-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="projects-container">
+  
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="Project 1">
+        <h3>Todo App</h3>
+        <p>A simple and clean to-do list app using HTML, CSS, and JavaScript.</p>
+        <a href="https://app.supademo.com/demo/cmd7fmspm6u0xc4kj1amznhql"   target="_blank">View Demo</a>
+      </div>
+  
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="Project 2">
+        <h3>Portfolio Website</h3>
+        <p>My personal portfolio to showcase my frontend projects and skills.</p>
+        <a href="https://github.com/obafemi/portfolio" target="_blank">View Demo</a>
+      </div>
+  
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="Project 3">
+        <h3>Login Auth App</h3>
+        <p>A simple and clean Login Auth app using HTML, CSS, JavaScript and Firebase, supabase for the backend integration.</p>
+        <a href="https://app.supademo.com/demo/cmd7thhmp79zwc4kj6ug5v8hv?v_email=EMAIL" target="_blank">View Demo</a>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Obafemi Peace. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://twitter.com/obafe81267" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/obafemi78654" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/+23409120347720" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:obafemifrank4@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      </div>    
+    </div>
+  </footer>
+  
+
+  <!-- Back to Top Button -->
+<button id="backToTop" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+
+<script>
+  // Show button when scroll is more than 200px
+  window.onscroll = function() {
+    const backToTop = document.getElementById("backToTop");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  };
+
+  // Scroll smoothly to top when button is clicked
+  document.getElementById("backToTop").onclick = function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Portforlio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.jpg" alt="Logo">
+        <span><a href="index.html">Obafemi Peace</a></span>
+      </div>      
+       <nav>
+        <ul class="nav-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN / HERO SECTION -->
+  <main class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2>Hi, I'm <span>Obafemi Peace</span></h2>
+        <p>A passionate frontend developer with backend integration skills creating modern and beautiful websites. I build pixel-perfect, engaging, and accessible digital experiences.</p>
+        <a href="project.html" class="btn">View My Work</a>
+      </div>
+      <div class="hero-image">
+        <div class="image-card">
+          <img src="images/hero.png" alt="Developer Photo">
+        </div>
+      </div>
+    </main>
+        <!-- ABOUT ME SECTION -->
+<section class="about" id="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          Hello! I’m <strong>Obafemi Peace</strong>, a passionate frontend developer based in Nigeria. I specialize in crafting beautiful, responsive, and user-friendly websites that bring ideas to life.
+        </p>
+        <p>
+          With a strong eye for design and a love for clean code, I build interfaces that not only look great but work perfectly across all devices. My development process combines creativity, modern technologies, and real-world functionality.
+        </p>
+        <p>
+          Beyond the frontend, I also integrate backend services like <strong>Firebase</strong> and <strong>Supabase</strong> to deliver seamless user authentication, database connections, and dynamic content — all with security and performance in mind <a href="about.html" title="Learn more" class="dot">........</a>
+        </p>
+        <ul class="skills">
+          <li>💡 HTML, CSS, JavaScript</li>
+          <li>⚙️ Firebase & Supabase Integration</li>
+          <li>📱 Responsive Web Design</li>
+          <li>🎨 Clean UI/UX Implementation</li>
+          <li>🌐 Api integration</li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects-section">
+  <h2>My Projects</h2>
+  <div class="projects-container">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="images/project1.jpg" alt="Project 1">
+      <h3>Responsive Portfolio</h3>
+      <p>A modern personal website with hero section, about, and contact. Built using HTML, CSS, and JavaScript.</p>
+      <a href="project.html" class="btn-project">View Project</a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="images/project2.jpg" alt="Project 2">
+      <h3>Firebase Auth App</h3>
+      <p>Login and Signup web app with Google authentication using Firebase. Includes profile updates and logout.</p>
+      <a href="project.html" class="btn-project">View Project</a>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <img src="images/project3.jpg" alt="Project 3">
+      <h3>To-Do List App</h3>
+      <p>A fully functional to-do list with live database sync using Supabase, built for everyday productivity.</p>
+      <a href="project.html" class="btn-project">View Project</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <h2>Contact Me</h2>
+  <p class="contact-p">If you have any project ideas, collaboration, or just want to say hello — feel free to reach out!</p>
+
+  <form id="contactForm" class="contact-form"  action="https://formspree.io/f/mrblbbpe" method="POST">
+    <div class="form-group">
+      <input type="text" name="name" placeholder="Your Name" required />
+    </div>
+    <div class="form-group">
+      <input type="email" name="email" placeholder="Your Email" required />
+    </div>
+    <div class="form-group">
+      <textarea name="message" placeholder="Your Message" required></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit">Send Message</button>
+    </div>
+  </form>
+  
+  <!-- ✅ Success Message -->
+  <div id="successPopup">✅ Your message has been sent successfully!</div>
+
+  </section>
+
+   <footer class="footer">
+      <div class="footer-content">
+    <p>&copy; 2025 Obafemi Peace. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://twitter.com/obafe81267" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://github.com/obafemi78654" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://wa.me/+23409120347720" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:obafemifrank4@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>    
+  </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button id="backToTop" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+
+<script>
+  // Show button when scroll is more than 200px
+  window.onscroll = function() {
+    const backToTop = document.getElementById("backToTop");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  };
+
+  // Scroll smoothly to top when button is clicked
+  document.getElementById("backToTop").onclick = function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
+
+<script>
+  const form = document.getElementById("contact-form");
+  const popup = document.getElementById("popup");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      popup.classList.add("show");
+      form.reset();
+      setTimeout(() => {
+        popup.classList.remove("show");
+      }, 5000);
+    } else {
+      alert("Failed to send. Please try again.");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
